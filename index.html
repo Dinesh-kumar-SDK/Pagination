@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Pagination</title>
+    <style>
+        body {
+        
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .user-list {
+            margin-bottom: 20px;
+        }
+        .user-item {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px 0;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .pagination li {
+            margin: 0 5px;
+        }
+        .pagination a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid #410ce0;
+            color: #4a22e9;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .pagination a:hover {
+            background-color: #007bff;
+            color: rgb(247, 4, 4);
+        }
+        .active a {
+            background-color: #0707f7;
+            color: rgb(12, 12, 12);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User List</h1>
+    <div class="user-list" id="user-list"></div>
+    
+    <ul class="pagination" id="pagination"></ul>
+  <script src="script.js"></script>
+
+</body>
+</html>
